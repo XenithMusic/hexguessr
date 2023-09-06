@@ -12,16 +12,24 @@
 	font-size:15px;
 	position:relative;
 	font-size:15px;
+	bottom:2.75px;
+}
+.selnav {
+	font-size:15px;
+	position:relative;
+	font-size:15px;
 	top:-2.75px;
+	font-weight:1000;
 }
 .small {
 	position:relative;
 	font-size:15px;
 	top:-2.75px;
 }
-.playspace {
+.content {
 	font-family:Segoe UI;
 	font-weight:400;
+	padding:1em
 }
 .bold {
 	font-weight:500;
@@ -31,13 +39,27 @@
 	font-weight:400;
 }
 .copyright {
-	position:absolute;
+	position:fixed;
 	bottom:0;
 	left:5%;
 	width:90%;
+	background:white;
+}
+.version {
+	margin: 5em auto 5em auto;
+	width:75%;
 }
 a {
 	text-decoration:underline;
 	color:black;
 	font-family:Corbel;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight:600;
+}
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 20px;
 }
