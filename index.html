@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="index.css">
+
+<div id="titlebar" class="center navbar" style="width:80%">
+	<span class="name" style="padding-left:25px;padding-right:25px">HEX <span class="small">#</span> GUESSR</span>
+	<a href="index.html" class="nav" style="padding-left:5px;padding-right:5px">Play</a>
+	<a href="about.html" class="nav" style="padding-left:5px;padding-right:5px">About</a>
+</div>
+<br>
+<div id="playspace" class="center playspace">
+	Your score: <span id="score" class="bold">Loading...</span><br>
+	Your guess: #<input id="input"></input> <button onClick="submit()" id="submitbtn">Submit</button>
+	<br>
+	<br>
+	<canvas id="color" width="632" height="200" style="border-top:1px dashed black"></canvas>
+</div>
+<br><br>
+<div style="border:1px solid black;width:316px;padding-left:5px;padding-right:5px" id="scorecard" class="scorecard center">
+	<p id="scorecardstart">Scorecard:</p>
+</div>
+
+<footer style="border:1px solid black;" class="copyright center">
+	<a href="LICENSE.txt">Copyright (c) 2023 XenithMusic<br>MIT Licence</a>
+
+</footer>
+
+<script src="index.js"></script>

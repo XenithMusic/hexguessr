@@ -1,0 +1,43 @@
+.center {
+	margin:auto;
+	width:632px;
+	border:1px solid black;
+	text-align:center;
+}
+.name {
+	font-size:25px;
+	font-family:Corbel;
+}
+.nav {
+	font-size:15px;
+	position:relative;
+	font-size:15px;
+	top:-2.75px;
+}
+.small {
+	position:relative;
+	font-size:15px;
+	top:-2.75px;
+}
+.playspace {
+	font-family:Segoe UI;
+	font-weight:400;
+}
+.bold {
+	font-weight:500;
+}
+.scorecard {
+	font-family:Segoe UI;
+	font-weight:400;
+}
+.copyright {
+	position:absolute;
+	bottom:0;
+	left:5%;
+	width:90%;
+}
+a {
+	text-decoration:underline;
+	color:black;
+	font-family:Corbel;
+}
