@@ -88,7 +88,6 @@ function generate() {
 	ctx.fillStyle = color
 	ctx.fillRect(0,0,316,200)
 	ctx.closePath()
-	console.log(color)
 }
 function updateScore(change) {
 	let c = Math.round(change)
