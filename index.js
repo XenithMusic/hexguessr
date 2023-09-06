@@ -10,6 +10,12 @@ function getRandomInt(min,max) {
 	return Math.round(Math.random()*(max-min)+min)
 }
 
+function inputkey(event) {
+	if (event.key == "Enter" || event.key == 13) {
+		if (submitbtn.disabled == false) { submit() }
+	}
+}
+
 function hexToRgb(hex) {
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
@@ -30,7 +36,7 @@ function rgbToHex(r, g, b) {
 }
 submitbtn.disabled = false
 generate()
-score = 0
+let score = 0
 updateScore()
 
 function submit() {
@@ -53,17 +59,17 @@ function submit() {
 	ctx.closePath()
 	scoretext = updateScore(1000/((distance+1)/10))
 	submitbtn.disabled = true
-	x = canvas.cloneNode()
+	let x = canvas.cloneNode()
 	x.width = "316"
-	xc = x.getContext("2d")
+	let xc = x.getContext("2d")
 	xc.fillStyle = color
 	xc.fillRect(0,0,158,150)
 	xc.fillStyle = rgbToHex(submission.r,submission.g,submission.b)
 	xc.fillRect(158,0,158,150)
-	y = document.createElement("div")
+	let y = document.createElement("div")
 	y.style.border.top = "1px solid grey"
 	y.style.width = "318px"
-	z = document.createElement("p")
+	let z = document.createElement("p")
 	z.classList.add("bold")
 	z.innerHTML = scoretext
 	y.append(z)
@@ -76,6 +82,7 @@ function submit() {
 }
 function generate() {
 	submitbtn.disabled = false
+	ctx.clearRect(0,0,canvas.width,canvas.height)
 	color = rgbToHex(getRandomInt(0,255),getRandomInt(0,255),getRandomInt(0,255))
 	ctx.beginPath()
 	ctx.fillStyle = color
@@ -84,9 +91,9 @@ function generate() {
 	console.log(color)
 }
 function updateScore(change) {
-	c = Math.round(change)
+	let c = Math.round(change)
 	if (change != null) { score += c }
-	s = Math.round(score)
+	let s = Math.round(score)
 	scorecounter.innerHTML = (s).toString()
 	if (change != null) {
 		scorecounter.innerHTML += " (+"+c+")"

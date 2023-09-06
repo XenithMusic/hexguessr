@@ -49,6 +49,10 @@
 	margin: 5em auto 5em auto;
 	width:75%;
 }
+
+html {
+	overflow-y:scroll
+}
 a {
 	text-decoration:underline;
 	color:black;

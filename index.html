@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <link rel="stylesheet" href="index.css">
 
 <div id="titlebar" class="center navbar" style="width:80%">
@@ -8,7 +9,7 @@
 <br>
 <div id="content" class="center content">
 	Your score: <span id="score" class="bold">Loading...</span><br>
-	Your guess: #<input id="input"></input> <button onClick="submit()" id="submitbtn">Submit</button>
+	Your guess: #<input id="input" onkeydown="inputkey(event)"></input> <button onClick="submit()" id="submitbtn">Submit</button>
 	<br>
 	<br>
 	<canvas id="color" width="632" height="200" style="border-top:1px dashed black"></canvas>
@@ -19,7 +20,7 @@
 </div>
 
 <footer style="border:1px solid black;" class="copyright center">
-	<a href="LICENSE.txt">Copyright (c) 2023 XenithMusic<br>MIT Licence</a>
+	<a href="LICENSE.txt">Copyright (c) 2023 XenithMusic<br>MIT License</a>
 
 </footer>
 
