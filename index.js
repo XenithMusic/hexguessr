@@ -82,6 +82,8 @@ function submit() {
 }
 function generate() {
 	submitbtn.disabled = false
+	input.value = ""
+	input.focus()
 	ctx.clearRect(0,0,canvas.width,canvas.height)
 	color = rgbToHex(getRandomInt(0,255),getRandomInt(0,255),getRandomInt(0,255))
 	ctx.beginPath()
