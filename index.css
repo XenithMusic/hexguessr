@@ -6,7 +6,7 @@
 }
 .name {
 	font-size:25px;
-	font-family:Corbel;
+	font-family:Corbel,Avenir,sans-serif;
 }
 .nav {
 	font-size:15px;
@@ -27,7 +27,7 @@
 	top:-2.75px;
 }
 .content {
-	font-family:Segoe UI;
+	font-family:Segoe UI,Avenir,sans-serif;
 	font-weight:400;
 	padding:1em
 }
